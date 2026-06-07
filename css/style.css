@@ -2293,6 +2293,196 @@ input:focus,textarea:focus,select:focus{
 
 }
 
+/* Portfolio Link Styles */
+
+.portfolio-img {
+
+    position: relative;
+
+    overflow: hidden;
+
+    background-size: cover;
+
+    background-position: center;
+
+}
+
+.portfolio-img img {
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    transition: transform 0.4s ease;
+
+}
+
+.portfolio-card:hover .portfolio-img img {
+
+    transform: scale(1.05);
+
+}
+
+.portfolio-link {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    color: var(--primary-blue);
+
+    font-weight: 600;
+
+    margin-top: 12px;
+
+    transition: all 0.3s ease;
+
+}
+
+.portfolio-link:hover {
+
+    gap: 12px;
+
+    color: var(--secondary-blue);
+
+}
+
+.portfolio-link i {
+
+    font-size: 0.8rem;
+
+    transition: transform 0.3s ease;
+
+}
+
+.portfolio-link:hover i {
+
+    transform: translateX(3px);
+
+}
+
+/* Certifications Styles */
+
+.certifications-year {
+
+    margin-bottom: 60px;
+
+}
+
+.year-title {
+
+    font-size: 2rem;
+
+    color: var(--primary-blue);
+
+    margin-bottom: 30px;
+
+    padding-bottom: 15px;
+
+    border-bottom: 3px solid var(--beige);
+
+    display: inline-block;
+
+}
+
+.certifications-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+
+    gap: 30px;
+
+}
+
+.certification-card {
+
+    background: white;
+
+    border-radius: 20px;
+
+    overflow: hidden;
+
+    border: 1px solid var(--border);
+
+    transition: all 0.4s ease;
+
+}
+
+.certification-card:hover {
+
+    transform: translateY(-10px);
+
+    box-shadow: var(--shadow-lg);
+
+}
+
+.cert-image {
+
+    width: 100%;
+
+    height: 220px;
+
+    overflow: hidden;
+
+    background: linear-gradient(135deg, var(--primary-blue), #1d6fa5);
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+}
+
+.cert-image img {
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    transition: transform 0.4s ease;
+
+}
+
+.certification-card:hover .cert-image img {
+
+    transform: scale(1.05);
+
+}
+
+.cert-info {
+
+    padding: 25px;
+
+}
+
+.cert-info h4 {
+
+    color: var(--primary-blue);
+
+    margin-bottom: 10px;
+
+    font-size: 1.1rem;
+
+}
+
+.cert-info p {
+
+    color: var(--black);
+
+    font-size: 0.95rem;
+
+    line-height: 1.6;
+
+}
+
 /* =======================================================
 
    RESPONSIVE TABLET (<= 1024px)
