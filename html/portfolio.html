@@ -1,27 +1,17 @@
 <!DOCTYPE html>
-
 <html lang="fr">
 
 <head>
-
 <meta charset="UTF-8">
-
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>Portfolio | YoBel Studio</title>
-
 <link rel="stylesheet" href="../css/style.css">
-
 </head>
 
 <body>
-
 <header class="navbar">
-
     <div class="container nav-container">
-
         <a href="../index.html" class="logo">
-
             <div class="logo-icon">
                 <img src="../img/YoBel.jpeg" alt="YoBel logo">
             </div>
@@ -29,218 +19,212 @@
                 <h3>YoBel</h3>
                 <span>Engineering Studio</span>
             </div>
-
         </a>
 
         <nav class="nav-menu">
             <a href="../index.html" class="nav-link">Accueil</a>
-
             <a href="about.html" class="nav-link">À propos</a>
-
             <a href="services.html" class="nav-link">Services</a>
-
-            <a href="certifications.html" class="nav-link">Certifications</a>
-
+             <!-- <a href="certifications.html" class="nav-link">Certifications</a> -->
             <a href="portfolio.html" class="nav-link active">Portfolio</a>
-
             <a href="contact.html" class="nav-link contact-btn">Contact</a>
-
         </nav>
 
         <div class="menu-toggle" id="mobile-menu">
-
             <span></span><span></span><span></span>
-
         </div>
-
     </div>
-
 </header>
 
 <section class="page-header-section">
-
     <h2>Projets & prototypes</h2>
-
     <div class="line"></div>
-
+    <p class="page-header-sub">Une sélection de plateformes conçues, développées et déployées en production.</p>
 </section>
 
 <section class="content-section">
+    <div class="container">
 
-    <div class="container portfolio-grid">
+        <div class="portfolio-filters" role="tablist" aria-label="Filtrer les projets par domaine">
+            <button class="filter-btn active" data-filter="all" role="tab" aria-selected="true">
+                Tous
+            </button>
+            <button class="filter-btn" data-filter="immobilier" role="tab" aria-selected="false">
+                <i class="fa-solid fa-building"></i> Immobilier
+            </button>
+            <button class="filter-btn" data-filter="automobile" role="tab" aria-selected="false">
+                <i class="fa-solid fa-car-side"></i> Automobile
+            </button>
+            <button class="filter-btn" data-filter="ecommerce" role="tab" aria-selected="false">
+                <i class="fa-solid fa-bag-shopping"></i> E-commerce
+            </button>
+            <button class="filter-btn" data-filter="sport" role="tab" aria-selected="false">
+                <i class="fa-solid fa-futbol"></i> Sport & communauté
+            </button>
+        </div>
 
-        <!-- Projet 1: IGA Plus SARL -->
-        <div class="portfolio-card reveal">
+        <div class="portfolio-grid">
 
-            <div class="portfolio-img">
-
-                <img src="../img/igaplus-preview.jpg" alt="IGA Plus SARL">
-
-            </div>
-
-            <div class="portfolio-info">
-
-                <h3>IGA Plus SARL</h3>
-
-                <p>Plateforme web complète avec design moderne et fonctionnalités avancées pour la gestion d'entreprise.</p>
-
-                <a href="https://igaplussarl.com/" target="_blank" class="portfolio-link">
-                    Visiter le site
-                    <i class="fa-solid fa-arrow-right"></i>
+            <!-- Projet 1 : IGA Plus SARL -->
+            <div class="portfolio-card reveal" data-category="immobilier">
+                <a class="portfolio-live-preview" href="https://igaplussarl.com/" target="_blank" rel="noopener" aria-label="Voir IGA Plus SARL en direct">
+                    <iframe class="portfolio-frame" src="https://igaplussarl.com/" loading="lazy" tabindex="-1" title="Aperçu du site IGA Plus SARL"></iframe>
+                    <div class="portfolio-overlay bg-tech">
+                        <i class="fa-solid fa-building"></i>
+                    </div>
+                    <span class="live-badge"><i class="fa-solid fa-circle"></i>En ligne</span>
                 </a>
-
+                <div class="portfolio-info">
+                    <span class="project-tag">Immobilier & gestion d'entreprise</span>
+                    <h3>IGA Plus SARL</h3>
+                    <p>Plateforme web complète avec design moderne et fonctionnalités avancées pour la gestion immobilière et administrative.</p>
+                    <a href="https://igaplussarl.com/" target="_blank" rel="noopener" class="portfolio-link">
+                        Visiter le site
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
             </div>
+
+            <!-- Projet 2 : LuxuryCar -->
+            <div class="portfolio-card reveal" data-category="automobile">
+                <a class="portfolio-live-preview" href="https://luxurycar8.netlify.app" target="_blank" rel="noopener" aria-label="Voir LuxuryCar en direct">
+                    <iframe class="portfolio-frame" src="https://luxurycar8.netlify.app" loading="lazy" tabindex="-1" title="Aperçu du site LuxuryCar"></iframe>
+                    <div class="portfolio-overlay bg-mech">
+                        <i class="fa-solid fa-car-side"></i>
+                    </div>
+                    <span class="live-badge"><i class="fa-solid fa-circle"></i>En ligne</span>
+                </a>
+                <div class="portfolio-info">
+                    <span class="project-tag">Automobile de prestige</span>
+                    <h3>LuxuryCar</h3>
+                    <p>Catalogue de véhicules d'exception avec fiches techniques détaillées, filtres par marque et expérience de navigation immersive.</p>
+                    <a href="https://luxurycar8.netlify.app" target="_blank" rel="noopener" class="portfolio-link">
+                        Visiter le site
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Projet 3 : EliteShop -->
+            <div class="portfolio-card reveal" data-category="ecommerce">
+                <a class="portfolio-live-preview" href="https://eliteshop3.netlify.app" target="_blank" rel="noopener" aria-label="Voir EliteShop en direct">
+                    <iframe class="portfolio-frame" src="https://eliteshop3.netlify.app" loading="lazy" tabindex="-1" title="Aperçu du site EliteShop"></iframe>
+                    <div class="portfolio-overlay bg-hybrid">
+                        <i class="fa-solid fa-bag-shopping"></i>
+                    </div>
+                    <span class="live-badge"><i class="fa-solid fa-circle"></i>En ligne</span>
+                </a>
+                <div class="portfolio-info">
+                    <span class="project-tag">E-commerce premium</span>
+                    <h3>EliteShop</h3>
+                    <p>Boutique en ligne haut de gamme pensée pour une expérience d'achat épurée, du catalogue jusqu'au tunnel de commande.</p>
+                    <a href="https://eliteshop3.netlify.app" target="_blank" rel="noopener" class="portfolio-link">
+                        Visiter le site
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Projet 4 : Goalyn -->
+            <div class="portfolio-card reveal" data-category="sport">
+                <a class="portfolio-live-preview" href="https://goalyn.onrender.com" target="_blank" rel="noopener" aria-label="Voir Goalyn en direct">
+                    <iframe class="portfolio-frame" src="https://goalyn.onrender.com" loading="lazy" tabindex="-1" title="Aperçu du site Goalyn"></iframe>
+                    <div class="portfolio-overlay bg-sport">
+                        <i class="fa-solid fa-futbol"></i>
+                    </div>
+                    <span class="live-badge"><i class="fa-solid fa-circle"></i>En ligne</span>
+                </a>
+                <div class="portfolio-info">
+                    <span class="project-tag">Sport & communauté</span>
+                    <h3>Goalyn</h3>
+                    <p>Plateforme de pronostics créée pour la Coupe du Monde : ligues privées, pronos par match, système de points et jokers, gages entre amis, chat en direct et classement en temps réel.</p>
+                    <a href="https://goalyn.onrender.com" target="_blank" rel="noopener" class="portfolio-link">
+                        Visiter le site
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Ajoute un futur projet ainsi (une seule ligne à changer) :
+            <div class="portfolio-card reveal" data-category="cuisine"> ... </div>
+            et un bouton de filtre supplémentaire :
+            <button class="filter-btn" data-filter="cuisine"><i class="fa-solid fa-utensils"></i> Cuisine</button>
+            -->
 
         </div>
 
-        <!-- Projet 2: Nexus Core -->
-        <div class="portfolio-card reveal">
-
-            <div class="portfolio-img">
-
-                <img src="../img/nexus-preview.jpg" alt="Nexus Core">
-
-            </div>
-
-            <div class="portfolio-info">
-
-                <h3>Nexus Core</h3>
-
-                <p>Plateforme ERP multi-organisation avec intégration complète de gestion administrative et financière.</p>
-
-                <a href="#" class="portfolio-link" onclick="alert('Plus de détails à venir'); return false;">
-                    En savoir plus
-                    <i class="fa-solid fa-arrow-right"></i>
-                </a>
-
-            </div>
-
-        </div>
-
-        <!-- Projet 3: Mecha System X -->
-        <div class="portfolio-card reveal">
-
-            <div class="portfolio-img">
-
-                <img src="../img/mecha-preview.jpg" alt="Mecha System X">
-
-            </div>
-
-            <div class="portfolio-info">
-
-                <h3>Mecha System X</h3>
-
-                <p>Prototype mécanique intelligent combinant l'IoT et l'automatisation pour l'industrie 4.0.</p>
-
-                <a href="#" class="portfolio-link" onclick="alert('Plus de détails à venir'); return false;">
-                    En savoir plus
-                    <i class="fa-solid fa-arrow-right"></i>
-                </a>
-
-            </div>
-
-        </div>
-
-        <!-- Projet 4: IoT Grid Node -->
-        <div class="portfolio-card reveal">
-
-            <div class="portfolio-img">
-
-                <img src="../img/iot-preview.jpg" alt="IoT Grid Node">
-
-            </div>
-
-            <div class="portfolio-info">
-
-                <h3>IoT Grid Node</h3>
-
-                <p>Système connecté autonome pour le monitoring et la collecte de données en temps réel.</p>
-
-                <a href="#" class="portfolio-link" onclick="alert('Plus de détails à venir'); return false;">
-                    En savoir plus
-                    <i class="fa-solid fa-arrow-right"></i>
-                </a>
-
-            </div>
-
-        </div>
+        <p class="portfolio-empty" hidden>Aucun projet dans cette catégorie pour le moment.</p>
 
     </div>
-
 </section>
 
 <footer>
-
     <div class="container footer-container">
-
         <div class="footer-brand">
-
             <h2>YoBel</h2>
-
-            <p>
-
-                Engineering • Software • Innovation
-
-            </p>
-
+            <p>Engineering • Software • Innovation</p>
         </div>
 
         <div class="footer-links">
-
             <h4>Navigation</h4>
-
             <a href="../index.html">Accueil</a>
-
             <a href="about.html">À propos</a>
-
             <a href="services.html">Services</a>
-
             <a href="certifications.html">Certifications</a>
-
             <a href="portfolio.html">Portfolio</a>
-
             <a href="contact.html">Contact</a>
-
         </div>
 
         <div class="footer-links">
-
             <h4>Services</h4>
-
             <a href="#">Développement Web</a>
-
             <a href="#">Applications Mobile</a>
-
-            <a href="#">Intelligence Artificielle</a>
-
             <a href="#">Ingénierie Industrielle</a>
-
         </div>
 
         <div class="footer-links">
-
             <h4>Contact</h4>
-
             <p>contact@yobel-studio.com</p>
-
             <p>+33 7 58 34 48 75</p>
-
             <p>Paris, France</p>
-
         </div>
-
     </div>
 
     <div class="footer-bottom">
-
         <p>© 2026 YoBel Studio. Tous droits réservés.</p>
-
     </div>
-
 </footer>
 
 <script src="../js/main.js"></script>
+<script>
+(function(){
+    var buttons = document.querySelectorAll('.filter-btn');
+    var cards = document.querySelectorAll('.portfolio-card');
+    var emptyMsg = document.querySelector('.portfolio-empty');
 
+    buttons.forEach(function(btn){
+        btn.addEventListener('click', function(){
+            buttons.forEach(function(b){
+                b.classList.remove('active');
+                b.setAttribute('aria-selected', 'false');
+            });
+            btn.classList.add('active');
+            btn.setAttribute('aria-selected', 'true');
+
+            var filter = btn.getAttribute('data-filter');
+            var visibleCount = 0;
+
+            cards.forEach(function(card){
+                var match = filter === 'all' || card.getAttribute('data-category') === filter;
+                card.style.display = match ? '' : 'none';
+                if (match) visibleCount++;
+            });
+
+            if (emptyMsg) emptyMsg.hidden = visibleCount !== 0;
+        });
+    });
+})();
+</script>
 </body>
 
 </html>

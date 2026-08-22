@@ -1,195 +1,240 @@
 <!DOCTYPE html>
-
 <html lang="fr">
 
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services | YoBel Studio</title>
 
-<meta charset="UTF-8">
+    <link rel="stylesheet" href="../css/style.css">
 
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Services | YoBel Studio</title>
-
-<link rel="stylesheet" href="../css/style.css">
-
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 
 <body>
 
-<header class="navbar">
+    <!-- HEADER -->
+    <header class="navbar">
+        <div class="container nav-container">
 
-    <div class="container nav-container">
+            <a href="../index.html" class="logo">
+                <div class="logo-icon">
+                    <img src="../img/YoBel.jpeg" alt="YoBel logo">
+                </div>
 
-        <a href="../index.html" class="logo">
+                <div class="logo-text">
+                    <h3>YoBel</h3>
+                    <span>Engineering Studio</span>
+                </div>
+            </a>
 
-            <div class="logo-icon">
-                <img src="../img/YoBel.jpeg" alt="YoBel logo">
+            <nav class="nav-menu">
+                <a href="../index.html" class="nav-link">Accueil</a>
+                <a href="about.html" class="nav-link">À propos</a>
+                <a href="services.html" class="nav-link active">Services</a>
+                <!-- <a href="certifications.html" class="nav-link">Certifications</a> -->
+                <a href="portfolio.html" class="nav-link">Portfolio</a>
+                <a href="contact.html" class="nav-link contact-btn">Contact</a>
+            </nav>
+
+            <div class="menu-toggle" id="mobile-menu">
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
-            <div class="logo-text">
-                <h3>YoBel</h3>
-                <span>Engineering Studio</span>
+
+        </div>
+    </header>
+
+    <!-- HERO -->
+    <section class="page-header-section">
+        <div class="container">
+            <h2>Nos solutions techniques</h2>
+            <div class="line"></div>
+            <p>
+                Nous concevons des solutions innovantes combinant ingénierie,
+                développement logiciel et technologies modernes.
+            </p>
+        </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section class="content-section">
+        <div class="container">
+
+            <div class="services-modern-grid">
+
+                <!-- SERVICE 1 -->
+                <div class="service-card-premium reveal">
+
+                    <div class="service-icon-wrapper">
+                        <i class="fa-solid fa-laptop-code"></i>
+                    </div>
+
+                    <span class="service-tag">Développement</span>
+
+                    <h3>Plateformes Digitales</h3>
+
+                    <p>
+                        Développement de solutions web modernes,
+                        ERP, CRM et plateformes SaaS adaptées
+                        aux besoins des entreprises.
+                    </p>
+
+                    <ul class="service-features">
+                        <li><i class="fa-solid fa-check"></i> Applications Web</li>
+                        <li><i class="fa-solid fa-check"></i> ERP & CRM</li>
+                        <li><i class="fa-solid fa-check"></i> SaaS Cloud</li>
+                        <li><i class="fa-solid fa-check"></i> API & Intégrations</li>
+                    </ul>
+
+                </div>
+
+                <!-- SERVICE 2 -->
+                <div class="service-card-premium reveal">
+
+                    <div class="service-icon-wrapper">
+                        <i class="fa-solid fa-mobile-screen-button"></i>
+                    </div>
+
+                    <span class="service-tag">Mobile</span>
+
+                    <h3>Applications Mobile</h3>
+
+                    <p>
+                        Création d'applications Android et iOS
+                        performantes avec synchronisation cloud
+                        et expérience utilisateur optimisée.
+                    </p>
+
+                    <ul class="service-features">
+                        <li><i class="fa-solid fa-check"></i> Android & iOS</li>
+                        <li><i class="fa-solid fa-check"></i> Flutter</li>
+                        <li><i class="fa-solid fa-check"></i> Firebase</li>
+                        <li><i class="fa-solid fa-check"></i> Notifications Push</li>
+                    </ul>
+
+                </div>
+
+                <!-- SERVICE 3 -->
+                <div class="service-card-premium reveal">
+
+                    <div class="service-icon-wrapper">
+                        <i class="fa-solid fa-cubes"></i>
+                    </div>
+
+                    <span class="service-tag">Ingénierie</span>
+
+                    <h3>Conception 3D</h3>
+
+                    <p>
+                        Réalisation de modèles CAO,
+                        simulations mécaniques et prototypage
+                        pour projets industriels.
+                    </p>
+
+                    <ul class="service-features">
+                        <li><i class="fa-solid fa-check"></i> Modélisation 3D</li>
+                        <li><i class="fa-solid fa-check"></i> CAO industrielle</li>
+                        <li><i class="fa-solid fa-check"></i> Prototypage</li>
+                        <li><i class="fa-solid fa-check"></i> Simulations</li>
+                    </ul>
+
+                </div>
+
+                <!-- SERVICE 4 -->
+                <div class="service-card-premium reveal">
+
+                    <div class="service-icon-wrapper">
+                        <i class="fa-solid fa-microchip"></i>
+                    </div>
+
+                    <span class="service-tag">Innovation</span>
+
+                    <h3>Systèmes Embarqués</h3>
+
+                    <p>
+                        Développement de solutions électroniques,
+                        IoT et automatisation industrielle.
+                    </p>
+
+                    <ul class="service-features">
+                        <li><i class="fa-solid fa-check"></i> IoT</li>
+                        <li><i class="fa-solid fa-check"></i> Arduino & ESP32</li>
+                        <li><i class="fa-solid fa-check"></i> Automatisation</li>
+                        <li><i class="fa-solid fa-check"></i> Capteurs intelligents</li>
+                    </ul>
+
+                </div>
+
+                
+                </div>
+
             </div>
 
-        </a>
-
-        <nav class="nav-menu">
-            <a href="../index.html" class="nav-link">Accueil</a>
-
-            <a href="about.html" class="nav-link">À propos</a>
-
-            <a href="services.html" class="nav-link active">Services</a>
-
-            <a href="certifications.html" class="nav-link">Certifications</a>
-
-            <a href="portfolio.html" class="nav-link">Portfolio</a>
-
-            <a href="contact.html" class="nav-link contact-btn">Contact</a>
-
-        </nav>
-
-        <div class="menu-toggle" id="mobile-menu">
-
-            <span></span><span></span><span></span>
-
         </div>
+    </section>
 
-    </div>
-
-</header>
-
-<section class="page-header-section">
-
-    <div class="container">
-
-        <h2>Nos solutions techniques</h2>
-
-        <div class="line"></div>
-
-    </div>
-
-</section>
-
-<section class="content-section">
-
-    <div class="container services-modern-grid">
-
-        <div class="service-card-premium reveal">
-
-            <div class="service-icon-wrapper"><i class="fa-solid fa-globe"></i></div>
-
-            <h3>Plateformes Digitales</h3>
-
-            <p>Systèmes web complets, SaaS et ERP sur mesure.</p>
-
-        </div>
-
-        <div class="service-card-premium reveal">
-
-            <div class="service-icon-wrapper"><i class="fa-solid fa-mobile"></i></div>
-
-            <h3>Applications Mobile</h3>
-
-            <p>Apps performantes connectées aux systèmes cloud.</p>
-
-        </div>
-
-        <div class="service-card-premium reveal">
-
-            <div class="service-icon-wrapper"><i class="fa-solid fa-cube"></i></div>
-
-            <h3>Conception 3D</h3>
-
-            <p>CAO, prototypage et simulation industrielle.</p>
-
-        </div>
-
-    </div>
-
-</section>
-
-<section class="cta-section">
-
-    <div class="container cta-box">
-
-        <h2>Un projet complexe ?</h2>
-
-        <p>Nous transformons les idées techniques en systèmes fonctionnels réels.</p>
-
-        <a href="contact.html" class="btn btn-primary">Démarrer un projet</a>
-
-    </div>
-
-</section>
-
-<footer>
-
-    <div class="container footer-container">
-
-        <div class="footer-brand">
-
-            <h2>YoBel</h2>
+    <!-- CTA -->
+    <section class="cta-section">
+        <div class="container cta-box">
+            <h2>Un projet complexe ?</h2>
 
             <p>
-
-                Engineering • Software • Innovation
-
+                Nous transformons les idées techniques en solutions
+                concrètes, performantes et évolutives.
             </p>
 
+            <a href="contact.html" class="btn btn-primary">
+                Démarrer un projet
+            </a>
         </div>
+    </section>
 
-        <div class="footer-links">
+    <!-- FOOTER -->
+    <footer>
 
-            <h4>Navigation</h4>
+        <div class="container footer-container">
 
-            <a href="../index.html">Accueil</a>
+            <div class="footer-brand">
+                <h2>YoBel</h2>
+                <p>Engineering • Software • Innovation</p>
+            </div>
 
-            <a href="about.html">À propos</a>
+            <div class="footer-links">
+                <h4>Navigation</h4>
+                <a href="../index.html">Accueil</a>
+                <a href="about.html">À propos</a>
+                <a href="services.html">Services</a>
+                <a href="portfolio.html">Portfolio</a>
+                <a href="contact.html">Contact</a>
+            </div>
 
-            <a href="services.html">Services</a>
+            <div class="footer-links">
+                <h4>Services</h4>
+                <a href="#">Développement Web</a>
+                <a href="#">Applications Mobile</a>
+                <a href="#">Ingénierie Industrielle</a>
+            </div>
 
-            <a href="portfolio.html">Portfolio</a>
-
-            <a href="contact.html">Contact</a>
-
-        </div>
-
-        <div class="footer-links">
-
-            <h4>Services</h4>
-
-            <a href="#">Développement Web</a>
-
-            <a href="#">Applications Mobile</a>
-
-            <a href="#">Intelligence Artificielle</a>
-
-            <a href="#">Ingénierie Industrielle</a>
-
-        </div>
-
-        <div class="footer-links">
-
-            <h4>Contact</h4>
-
-            <p>contact@yobel-studio.com</p>
-
-            <p>+33 7 58 34 48 75</p>
-
-            <p>Paris, France</p>
+            <div class="footer-links">
+                <h4>Contact</h4>
+                <p>contact@yobel-studio.com</p>
+                <p>+33 7 58 34 48 75 / +33 7 58 18 15 22</p>
+                <p>Paris, France</p>
+            </div>
 
         </div>
 
-    </div>
+        <div class="footer-bottom">
+            <p>© 2026 YoBel Studio. Tous droits réservés.</p>
+        </div>
 
-    <div class="footer-bottom">
+    </footer>
 
-        <p>© 2026 YoBel Studio. Tous droits réservés.</p>
-
-    </div>
-
-</footer>
-
-<script src="../js/main.js"></script>
+    <script src="../js/main.js"></script>
 
 </body>
 
