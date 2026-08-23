@@ -2129,6 +2129,8 @@ footer{
 
     cursor:pointer;
 
+    white-space:nowrap;
+
     transition:.3s;
 
 }
@@ -2177,17 +2179,27 @@ footer{
 
 }
 
+/* --- Grid: equal-height cards, no orphan columns on narrow phones --- */
+
 .portfolio-grid{
 
     display:grid;
 
-    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
 
-    gap:30px;
+    gap:32px;
+
+    align-items:stretch;
 
 }
 
 .portfolio-card{
+
+    display:flex;
+
+    flex-direction:column;
+
+    height:100%;
 
     background:white;
 
@@ -2197,7 +2209,9 @@ footer{
 
     border:1px solid var(--border);
 
-    transition:.4s;
+    box-shadow:var(--shadow-sm);
+
+    transition:transform .4s ease, box-shadow .4s ease;
 
 }
 
@@ -2212,7 +2226,10 @@ footer{
 /* --- Live preview (real deployed site, scaled down inside an iframe) ---
    Renamed to .portfolio-live-preview: .portfolio-preview was already taken
    by the home page's "PORTFOLIO PREVIEW" section above, and the collision
-   was overriding that section's padding across the site. */
+   was overriding that section's padding across the site.
+   Uses aspect-ratio instead of a fixed height so the preview keeps its
+   proportions at every card width, from a 3-column desktop grid down to
+   a single mobile column. */
 
 .portfolio-live-preview{
 
@@ -2220,11 +2237,13 @@ footer{
 
     display:block;
 
-    height:180px;
+    aspect-ratio:16 / 10;
 
     overflow:hidden;
 
     background:#0d0d0d;
+
+    flex-shrink:0;
 
 }
 
@@ -2259,7 +2278,8 @@ footer{
 }
 
 /* Tinted gradient sitting on top of the iframe so the card reads
-   immediately even before/if the preview finishes loading */
+   immediately even before/if the preview finishes loading, and on
+   touch devices that never trigger :hover */
 
 .portfolio-overlay{
 
@@ -2273,7 +2293,7 @@ footer{
 
     justify-content:center;
 
-    font-size:2.4rem;
+    font-size:clamp(1.8rem, 5vw, 2.4rem);
 
     color:rgba(255,255,255,.85);
 
@@ -2345,6 +2365,8 @@ footer{
 
     text-transform:uppercase;
 
+    white-space:nowrap;
+
 }
 
 .live-badge i{
@@ -2365,7 +2387,16 @@ footer{
 
 }
 
+/* --- Info block: flex column so the CTA always sticks to the bottom
+   of the card, even when one description runs longer than the others --- */
+
 .portfolio-info{
+
+    display:flex;
+
+    flex-direction:column;
+
+    flex:1;
 
     padding:25px;
 
@@ -2399,6 +2430,8 @@ footer{
 
     margin-bottom:16px;
 
+    flex:1;
+
 }
 
 .portfolio-link{
@@ -2409,11 +2442,13 @@ footer{
 
     gap:8px;
 
+    align-self:flex-start;
+
     color:var(--primary-blue);
 
     font-weight:600;
 
-    margin-top:12px;
+    margin-top:auto;
 
     transition:all .3s ease;
 
@@ -2458,6 +2493,125 @@ footer{
     }
 
 }
+
+/* =======================================================
+
+   PORTFOLIO GRID — RESPONSIVE
+
+======================================================= */
+
+@media (max-width: 1024px){
+
+    .portfolio-grid{
+
+        grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+
+        gap:26px;
+
+    }
+
+}
+
+@media (max-width: 768px){
+
+    /* Filter chips scroll horizontally instead of wrapping into a
+       tall, awkward block of rows on narrower screens */
+
+    .portfolio-filters{
+
+        flex-wrap:nowrap;
+
+        justify-content:flex-start;
+
+        overflow-x:auto;
+
+        -webkit-overflow-scrolling:touch;
+
+        scrollbar-width:none;
+
+        padding:4px 4px 10px;
+
+        margin:0 -4px 30px;
+
+    }
+
+    .portfolio-filters::-webkit-scrollbar{
+
+        display:none;
+
+    }
+
+    .filter-btn{
+
+        flex:0 0 auto;
+
+    }
+
+    .portfolio-info{
+
+        padding:22px;
+
+    }
+
+}
+
+@media (max-width: 480px){
+
+    .portfolio-grid{
+
+        grid-template-columns:1fr;
+
+        gap:22px;
+
+    }
+
+    .portfolio-live-preview{
+
+        aspect-ratio:16 / 11;
+
+    }
+
+    .portfolio-info{
+
+        padding:20px;
+
+    }
+
+    .portfolio-info h3{
+
+        font-size:1.15rem;
+
+    }
+
+    .project-tag{
+
+        font-size:.7rem;
+
+    }
+
+    .live-badge{
+
+        top:10px;
+
+        right:10px;
+
+        padding:4px 9px;
+
+        font-size:.62rem;
+
+    }
+
+    .filter-btn{
+
+        padding:9px 16px;
+
+        font-size:.82rem;
+
+    }
+
+}
+
+
 
 /* =======================================================
 
