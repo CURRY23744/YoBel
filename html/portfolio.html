@@ -26,7 +26,7 @@
             <a href="about.html" class="nav-link">À propos</a>
             <a href="services.html" class="nav-link">Services</a>
              <!-- <a href="certifications.html" class="nav-link">Certifications</a> -->
-            <a href="portfolio.html" class="nav-link active">Portfolio</a>
+            <a href="portfolio.html" class="nav-link active" aria-current="page">Portfolio</a>
             <a href="contact.html" class="nav-link contact-btn">Contact</a>
         </nav>
 
@@ -66,6 +66,9 @@
             </button>
             <button class="filter-btn" data-filter="voyage" role="tab" aria-selected="false">
                 <i class="fa-solid fa-plane"></i> Voyage
+            </button>
+            <button class="filter-btn" data-filter="gestion-projet" role="tab" aria-selected="false">
+                <i class="fa-solid fa-list-check"></i> Gestion de projet
             </button>
         </div>
 
@@ -211,6 +214,26 @@
                 </div>
             </div>
 
+            <!-- Projet 8 : YoBel Plateforme -->
+            <div class="portfolio-card reveal" data-category="gestion-projet">
+                <a class="portfolio-live-preview" href="https://yobel-plateforme.ethiodeploy.app/login" target="_blank" rel="noopener" aria-label="Accéder à la plateforme de gestion de projet YoBel">
+                    <iframe class="portfolio-frame" src="https://yobel-plateforme.ethiodeploy.app/login" loading="lazy" tabindex="-1" title="Aperçu de la plateforme de gestion de projet YoBel"></iframe>
+                    <div class="portfolio-overlay bg-tech">
+                        <i class="fa-solid fa-list-check"></i>
+                    </div>
+                    <span class="live-badge"><i class="fa-solid fa-circle"></i>En ligne</span>
+                </a>
+                <div class="portfolio-info">
+                    <span class="project-tag">Gestion de projet</span>
+                    <h3>YoBel Plateforme</h3>
+                    <p>Plateforme en ligne dédiée à la gestion de projet.</p>
+                    <a href="https://yobel-plateforme.ethiodeploy.app/login" target="_blank" rel="noopener" class="portfolio-link">
+                        Accéder à la plateforme
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+
         </div>
 
         <p class="portfolio-empty" hidden>Aucun projet dans cette catégorie pour le moment.</p>
@@ -244,8 +267,11 @@
 
         <div class="footer-links">
             <h4>Contact</h4>
-            <p>contact@yobel-studio.com</p>
-            <p>+33 7 58 34 48 75 / +33 7 58 18 15 22</p>
+            <p class="footer-email">contact@yobel-studio.com</p>
+            <p class="footer-phone-numbers">
+                <span>+33 7 58 34 48 75</span>
+                <span>+33 7 58 18 15 22</span>
+            </p>
             <p>Paris, France</p>
         </div>
     </div>

@@ -367,6 +367,12 @@ ul{
 
 }
 
+.nav-link.active{
+
+    color:var(--primary-blue);
+
+}
+
 .nav-link::after{
 
     content:'';
@@ -388,6 +394,12 @@ ul{
 }
 
 .nav-link:hover::after{
+
+    width:100%;
+
+}
+
+.nav-link.active::after{
 
     width:100%;
 
@@ -1662,6 +1674,18 @@ footer{
     color:rgba(255,255,255,.75);
 
     margin-bottom:10px;
+
+}
+
+.footer-email{
+
+    white-space:nowrap;
+
+}
+
+.footer-phone-numbers span{
+
+    display:block;
 
 }
 
